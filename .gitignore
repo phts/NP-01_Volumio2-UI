@@ -15,7 +15,6 @@ load-variant.scss
 /nbproject/
 .DS_Store
 src/app/volumio.constant.js
-package-lock.json
 credits.html
 load-variant.scss
 src/app/themes/volumio3/assets/static-pages/credits.html

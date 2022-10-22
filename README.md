@@ -4,19 +4,16 @@
 
 [![Volumio](https://volumio.org/wp-content/uploads/2016/02/Volumio_logo_HD2000.jpg)](https://volumio.org)
 
-
 ## Volumio Web Interface
 
 This UI is meant to be used as a standalone Web User Interface communicating via Volumio2 Backend via Socket.io API, see [Volumio2 WebSocket API reference](https://github.com/volumio/Volumio2/wiki/WebSockets-API-Reference)
 
 Currently the UI is served via Express Static Server, and resides at `/volumio/http/www` (Classic UI) and `/volumio/http/www3` (Contemporary UI)
 
-
 ## Repo information
 
 This repo holds the source code of Volumio UI [Volumio2](https://github.com/volumio/Volumio2), which is compiled and hosted in Volumio system images.
 Only the `dist/` and `dist3/` branches are needed by Volumio2, so there is a [dist branch](https://github.com/volumio/Volumio2-UI/tree/dist) which contains just that.
-
 
 ## Set up development environment
 
@@ -28,8 +25,7 @@ Clone the Repo:
 git clone https://github.com/volumio/Volumio2-UI.git
 ```
 
-
-Then, install its depencencies
+Then, install its dependencies
 
 ```shell
 cd Volumio2-UI
@@ -52,7 +48,6 @@ The file will look like
   "localhost": "http://192.168.31.234"
 }
 ```
-
 
 Now, feel free to edit and see live changes on a local browser with dynamically generated UI. To do so:
 
@@ -78,12 +73,8 @@ Once finished, to deploy on Volumio 2, first build it. if you want production op
 npm run gulp build --theme="volumio" --env="production"
 ```
 
-
 And deploy by copying the content of dist directory on Volumio2 device to:
 
 ```shell
 /volumio/http/www
 ```
-
-
-
