@@ -1,9 +1,18 @@
+# PHTS NP-01: Volumio UI
+
+This is a modification of original [Volumio2-UI] which is used by [PHTS NP-01].
+
+[volumio2-ui]: https://github.com/volumio/Volumio2-UI
+[phts np-01]: https://tsaryk.com/NP-01
+
+<details>
+<summary>README from original repo</summary>
+
 [![Build Status](https://app.travis-ci.com/volumio/Volumio2-UI.svg?branch=master)](https://travis-ci.org/volumio/Volumio2-UI)
 [![Open Source Love](https://badges.frapsoft.com/os/v2/open-source.png?v=103)](https://github.com/ellerbrock/open-source-badges/)
 [![Awesome](https://awesome.re/badge.svg)](https://github.com/thibmaek/awesome-raspberry-pi)
 
 [![Volumio](https://volumio.org/wp-content/uploads/2016/02/Volumio_logo_HD2000.jpg)](https://volumio.org)
-
 
 ## Volumio Web Interface
 
@@ -11,12 +20,10 @@ This UI is meant to be used as a standalone Web User Interface communicating via
 
 Currently the UI is served via Express Static Server, and resides at `/volumio/http/www` (Classic UI) and `/volumio/http/www3` (Contemporary UI)
 
-
 ## Repo information
 
 This repo holds the source code of Volumio UI [Volumio2](https://github.com/volumio/Volumio2), which is compiled and hosted in Volumio system images.
 Only the `dist/` and `dist3/` branches are needed by Volumio2, so there is a [dist branch](https://github.com/volumio/Volumio2-UI/tree/dist) which contains just that.
-
 
 ## Set up development environment
 
@@ -27,7 +34,6 @@ Clone the Repo:
 ```shell
 git clone https://github.com/volumio/Volumio2-UI.git
 ```
-
 
 Then, install its depencencies
 
@@ -53,7 +59,6 @@ The file will look like
 }
 ```
 
-
 Now, feel free to edit and see live changes on a local browser with dynamically generated UI. To do so:
 
 ```shell
@@ -78,12 +83,10 @@ Once finished, to deploy on Volumio 2, first build it. if you want production op
 npm run gulp build --theme="volumio" --env="production"
 ```
 
-
 And deploy by copying the content of dist directory on Volumio2 device to:
 
 ```shell
 /volumio/http/www
 ```
 
-
-
+</details>
