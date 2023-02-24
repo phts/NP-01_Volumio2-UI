@@ -3,13 +3,18 @@
   "pageTitle": "Volumio - Audiophile Music Player",
   "sideMenu": {
     "checkboxes": {
-        "analogInput": false,
-        "bluetooth": false
-      }
+      "analogInput": false,
+      "bluetooth": false
+    }
   },
   "pluginsDoc": {
     "showDoc": true,
     "showDescription": true
+  },
+  "trackManagerButtonBar": {
+    "actions": {
+      "twitter": false
+    }
   },
   "addressBarColor": "black",
   "knobThicknessDesktop": 0.2,
